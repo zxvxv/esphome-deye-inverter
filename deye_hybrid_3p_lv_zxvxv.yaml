@@ -1,0 +1,67 @@
+substitutions:
+# Nazwa urządzenia w sieci
+  name: "deye-inverter"
+  friendly_name: "Falownik Deye"
+
+# Adres Modbus falownika (zazwyczaj 0x01)
+  modbus_inverter_address: "0x01"
+
+# --- Parametry SAFE MODE (Zabezpieczenia) ---
+  safe_mode_delay: 600s
+  default_maximum_battery_charge_current: "140"
+  default_max_sell_power: "12000"
+  default_system_work_mode: "Zero Export To Load"
+  default_solar_sell: "on"
+  default_force_off_grid: "off"
+  enable_sync_time: "false"
+
+esphome:
+  name: ${name}
+  friendly_name: ${friendly_name}
+  platform: ESP32
+  board: esp32-s3-devkitc-1
+  name_add_mac_suffix: true
+  project:
+    name: "zxvxv.DeyeInverter"
+    version: "1.0"
+
+# --- PLUG & PLAY (WiFi Manager) ---
+wifi:
+  ap:
+    ssid: "Deye-Konfiguracja"
+    password: "admin12345678"
+  ap_timeout: 2min
+
+captive_portal:
+
+# --- IMPORT LOGIKI BIZNESOWEJ Z TWOJEGO REPOZYTORIUM ---
+packages:
+  pv_inverter:
+    url: https://github.com/zxvxv/esphome-deye-inverter
+    refresh: 1h
+    files: pv_inverter/deye_hybrid_3p_lv.yaml
+
+# --- KONFIGURACJA SPRZĘTOWA (HARDWARE) ---
+uart:
+  - id: mod_bus
+    tx_pin: 17
+    rx_pin: 18
+    baud_rate: 9600
+    stop_bits: 1
+    debug:
+      direction: BOTH
+      dummy_receiver: false
+
+modbus:
+  flow_control_pin: 21
+  id: modbus1
+
+api:
+  reboot_timeout: 0s
+
+ota:
+  - platform: esphome
+
+logger:
+  hardware_uart: USB_SERIAL_JTAG
+  level: DEBUG
