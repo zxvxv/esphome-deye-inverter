@@ -134,7 +134,7 @@ interval:
             }
           }
           else if (mode_idx == 4) {
-            float temp = id(deye_dc_temperature).state;
+            float temp = id(deye_ac_temperature).state;
             
             if (temp >= id(relay_temp_on).state) {
               if (!id(waveshare_relay).state) id(waveshare_relay).turn_on();
