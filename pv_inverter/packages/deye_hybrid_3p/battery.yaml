@@ -1,3 +1,7 @@
+# --- POCZĄTEK PLIKU BATTERY DEYE ---
+# Wersja v1.01 - Dodanie ID deye_battery_soc dla automatyzacji chłodzenia/stycznika oraz czyszczenie twardych spacji.
+# Zmiany: Poprawa formatowania i dodanie brakującego identyfikatora do encji poziomu baterii (adres 588).
+#
 # Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -816,3 +820,4 @@ number:
     value_type: U_WORD
     mode: box
     icon: "mdi:battery-charging-50"
+# --- KONIEC PLIKU BATTERY DEYE ---
