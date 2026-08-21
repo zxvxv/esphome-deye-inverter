@@ -1,4 +1,7 @@
-﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+# --- POCZĄTEK PLIKU INVERTER DEYE ---
+# Wersja v1.02 - Dodanie identyfikatora deye_dc_temperature dla automatyzacji chłodzenia.
+#
+# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -16,6 +19,7 @@ sensor:
   - platform: modbus_controller
     modbus_controller_id: ${modbus_controller_id}
     name: "DC Temperature"
+    id: deye_dc_temperature
     register_type: holding
     address: 540
     unit_of_measurement: "°C"
@@ -191,3 +195,4 @@ binary_sensor:
     bitmask: 0x1
     device_class: power
     icon: "mdi:toggle-switch"
+# --- KONIEC PLIKU INVERTER DEYE ---
