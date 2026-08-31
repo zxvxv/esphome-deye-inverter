@@ -1,8 +1,9 @@
 # --- POCZĄTEK PLIKU DEYE HYBRID 3P LV ---
-# Wersja: v1.02
+# Wersja: v1.03
 # Zmiany:
-# - Usunięto potężny, zduplikowany blok encji baterii wklejony bezpośrednio w kodzie, polegając wyłącznie na czystym imporcie z packages (odblokowanie Modbus).
+# - Zastąpiono przestarzały atrybut .state wywołaniem .current_option() dla encji system_work_mode, aby dostosować kod do nowych wymogów ESPHome 2026.8+.
 # - Wdrożono sprzętowe zabezpieczenie pamięci EEPROM (Flash) w skrypcie set_safe_modbus_registers poprzez dodanie weryfikacji stanu przed komendą zapisu.
+# - Usunięto potężny, zduplikowany blok encji baterii wklejony bezpośrednio w kodzie, polegając wyłącznie na czystym imporcie z packages (odblokowanie Modbus).
 #
 # Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
@@ -66,7 +67,7 @@ script:
                 value: ${default_max_sell_power}
       - if:
           condition:
-            lambda: 'return id(system_work_mode).state != std::string("${default_system_work_mode}");'
+            lambda: 'return id(system_work_mode).current_option() != std::string("${default_system_work_mode}");'
           then:
             - select.set:
                 id: system_work_mode
