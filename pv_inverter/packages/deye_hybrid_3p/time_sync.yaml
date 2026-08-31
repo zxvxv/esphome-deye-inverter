@@ -1,3 +1,8 @@
+# --- POCZĄTEK PLIKU TIME SYNC ---
+# Wersja: v1.01
+# Zmiany:
+# - Wymuszono silne typowanie std::string() w warunku sprawdzającym ${enable_sync_time}, usuwając ostrzeżenie o porównywaniu wskaźników.
+#
 # Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,7 +29,7 @@ time:
           - if:
               condition:
                 lambda: |-
-                  return "${enable_sync_time}" == "True";
+                  return std::string("${enable_sync_time}") == "True";
               then:
                 - logger.log: "Syncing inverter time with HomeAssistant"
                 - script.execute: set_inverter_time_script
@@ -87,3 +92,4 @@ script:
           ESP_LOGI("time_sync", "Time set: %04d-%02d-%02d %02d:%02d:%02d (reg62=0x%04X, reg63=0x%04X, reg64=0x%04X)",
                    time.year, time.month, time.day_of_month, time.hour, time.minute, time.second,
                    reg62, reg63, reg64);
+# --- KONIEC PLIKU TIME SYNC ---
