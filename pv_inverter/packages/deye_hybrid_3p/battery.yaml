@@ -1,6 +1,10 @@
 # --- POCZĄTEK PLIKU BATTERY DEYE ---
-# Wersja v1.01 - Dodanie ID deye_battery_soc dla automatyzacji chłodzenia/stycznika oraz czyszczenie twardych spacji.
-# Zmiany: Poprawa formatowania i dodanie brakującego identyfikatora do encji poziomu baterii (adres 588).
+# Wersja v1.02
+# Zmiany:
+# - Zweryfikowano strukturę pod kątem ochrony EEPROM (brak pętli i bezwarunkowych zapisów).
+# - Wygenerowano jako wyłączne, czyste źródło prawdy dla pakietu 'battery', aby zlikwidować nakładające się zapytania Modbus.
+# Wersja v1.01:
+# - Dodanie ID deye_battery_soc dla automatyzacji chłodzenia/stycznika oraz czyszczenie twardych spacji.
 #
 # Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
