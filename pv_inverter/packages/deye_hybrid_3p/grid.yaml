@@ -62,7 +62,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Grid Frequency"
     register_type: holding
     address: 609
@@ -117,7 +117,7 @@ sensor:
     icon: "mdi:sine-wave"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Grid Power Factor"
     register_type: holding
     address: 621
@@ -130,7 +130,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Daily Energy Bought"
     id: daily_energy_bought
     register_type: holding
@@ -145,7 +145,7 @@ sensor:
     icon: "mdi:transmission-tower-import"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Daily Energy Sold"
     id: daily_energy_sold
     register_type: holding
@@ -160,7 +160,7 @@ sensor:
     icon: "mdi:transmission-tower-export"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Total Energy Bought"
     id: total_energy_bought
     register_type: holding
@@ -175,7 +175,7 @@ sensor:
     icon: "mdi:transmission-tower-import"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Total Energy Sold"
     id: total_energy_sold
     register_type: holding
@@ -190,7 +190,7 @@ sensor:
     icon: "mdi:transmission-tower-export"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L1 Power"
     register_type: holding
     address: 604
@@ -202,7 +202,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L2 Power"
     register_type: holding
     address: 605
@@ -214,7 +214,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L3 Power"
     register_type: holding
     address: 606
@@ -226,7 +226,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT Power"
     register_type: holding
     address: 607
@@ -238,7 +238,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L1 Power"
     register_type: holding
     address: 616
@@ -250,7 +250,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L2 Power"
     register_type: holding
     address: 617
@@ -262,7 +262,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L3 Power"
     register_type: holding
     address: 618
@@ -274,7 +274,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT Power"
     register_type: holding
     address: 619
@@ -286,7 +286,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L1 Current"
     id: internal_ct_l1_current
     register_type: holding
@@ -300,7 +300,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L2 Current"
     id: internal_ct_l2_current
     register_type: holding
@@ -314,7 +314,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Internal CT L3 Current"
     id: internal_ct_l3_current
     register_type: holding
@@ -328,7 +328,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L1 Current"
     id: external_ct_l1_current
     register_type: holding
@@ -342,7 +342,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L2 Current"
     id: external_ct_l2_current
     register_type: holding
@@ -356,7 +356,7 @@ sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "External CT L3 Current"
     id: external_ct_l3_current
     register_type: holding
@@ -380,7 +380,7 @@ binary_sensor:
     icon: "mdi:transmission-tower"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "CT L1 Self Test"
     register_type: holding
     address: 597
@@ -392,7 +392,7 @@ binary_sensor:
     icon: "mdi:check-circle"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "CT L2 Self Test"
     register_type: holding
     address: 597
@@ -404,7 +404,7 @@ binary_sensor:
     icon: "mdi:check-circle"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "CT L3 Self Test"
     register_type: holding
     address: 597
@@ -418,7 +418,7 @@ binary_sensor:
 select:
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Grid Frequency"
     address: 183
     value_type: U_WORD
@@ -430,7 +430,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "AC Couple"
     address: 234
     value_type: U_WORD
@@ -448,7 +448,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Grid Voltage"
     address: 138
     value_type: U_WORD
@@ -464,7 +464,7 @@ select:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Charging Signal"
     address: 140
     value_type: U_WORD
@@ -479,7 +479,7 @@ select:
 switch:
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Force Off Grid"
     id: switch_off_grid
     register_type: holding
@@ -489,7 +489,7 @@ switch:
     icon: "mdi:transmission-tower-off"
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Generator Grid Side"
     register_type: holding
     address: 189
@@ -516,7 +516,7 @@ switch:
 number:
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Asymmetric Phase Feeding Raw"
     id: asymmetric_phase_feeding_raw
     register_type: holding

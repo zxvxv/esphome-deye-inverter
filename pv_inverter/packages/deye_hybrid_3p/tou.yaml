@@ -1,4 +1,4 @@
-# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -624,7 +624,7 @@ switch:
 number:
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use Enabled Raw"
     id: time_of_use_enabled_raw
     register_type: holding
@@ -635,7 +635,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 1 Start Raw"
     id: time_of_use_1_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 148
     value_type: U_WORD
@@ -647,7 +647,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 2 Start Raw"
     id: time_of_use_2_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 149
     value_type: U_WORD
@@ -659,7 +659,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 3 Start Raw"
     id: time_of_use_3_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 150
     value_type: U_WORD
@@ -671,7 +671,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 4 Start Raw"
     id: time_of_use_4_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 151
     value_type: U_WORD
@@ -683,7 +683,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 5 Start Raw"
     id: time_of_use_5_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 152
     value_type: U_WORD
@@ -695,7 +695,7 @@ number:
     use_write_multiple: true
     name: "Time of Use 6 Start Raw"
     id: time_of_use_6_start_raw
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     register_type: holding
     address: 153
     value_type: U_WORD
@@ -705,7 +705,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 1 Out Power"
     id: time_of_use_1_out_power
     unit_of_measurement: W
@@ -717,7 +717,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 2 Out Power"
     id: time_of_use_2_out_power
     unit_of_measurement: W
@@ -729,7 +729,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 3 Out Power"
     id: time_of_use_3_out_power
     unit_of_measurement: W
@@ -741,7 +741,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 4 Out Power"
     id: time_of_use_4_out_power
     unit_of_measurement: W
@@ -753,7 +753,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 5 Out Power"
     id: time_of_use_5_out_power
     unit_of_measurement: W
@@ -765,7 +765,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 6 Out Power"
     id: time_of_use_6_out_power
     unit_of_measurement: W
@@ -777,7 +777,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 1 SoC"
     id: time_of_use_1_soc
     unit_of_measurement: "%"
@@ -791,7 +791,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 2 SoC"
     id: time_of_use_2_soc
     unit_of_measurement: "%"
@@ -805,7 +805,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 3 SoC"
     id: time_of_use_3_soc
     unit_of_measurement: "%"
@@ -819,7 +819,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 4 SoC"
     id: time_of_use_4_soc
     unit_of_measurement: "%"
@@ -833,7 +833,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 5 SoC"
     id: time_of_use_5_soc
     unit_of_measurement: "%"
@@ -847,7 +847,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 6 SoC"
     id: time_of_use_6_soc
     unit_of_measurement: "%"
@@ -929,7 +929,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 1 Raw"
     id: time_of_use_1_raw
     register_type: holding
@@ -938,7 +938,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 2 Raw"
     id: time_of_use_2_raw
     register_type: holding
@@ -947,7 +947,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 3 Raw"
     id: time_of_use_3_raw
     register_type: holding
@@ -956,7 +956,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 4 Raw"
     id: time_of_use_4_raw
     register_type: holding
@@ -965,7 +965,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 5 Raw"
     id: time_of_use_5_raw
     register_type: holding
@@ -974,7 +974,7 @@ number:
 
   - platform: modbus_controller
     use_write_multiple: true
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Time of Use 6 Raw"
     id: time_of_use_6_raw
     register_type: holding

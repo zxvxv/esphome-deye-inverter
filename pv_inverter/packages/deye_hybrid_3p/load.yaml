@@ -1,4 +1,4 @@
-# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
 
 sensor:
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load L1 Voltage"
     register_type: holding
     address: 644
@@ -27,7 +27,7 @@ sensor:
     icon: "mdi:sine-wave"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load L2 Voltage"
     register_type: holding
     address: 645
@@ -40,7 +40,7 @@ sensor:
     icon: "mdi:sine-wave"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load L3 Voltage"
     register_type: holding
     address: 646
@@ -101,7 +101,7 @@ sensor:
     icon: "mdi:home-lightning-bolt"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load Frequency"
     register_type: holding
     address: 655
@@ -114,7 +114,7 @@ sensor:
     icon: "mdi:sine-wave"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Daily Load Consumption"
     id: daily_load_consumption
     register_type: holding
@@ -129,7 +129,7 @@ sensor:
     icon: "mdi:home-lightning-bolt"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_slow
     name: "Total Consumption"
     id: total_consumption
     register_type: holding
@@ -144,7 +144,7 @@ sensor:
     icon: "mdi:home-lightning-bolt"
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load UPS L1 Power"
     register_type: holding
     address: 640
@@ -157,7 +157,7 @@ sensor:
     disabled_by_default: true
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load UPS L2 Power"
     register_type: holding
     address: 641
@@ -170,7 +170,7 @@ sensor:
     disabled_by_default: true
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load UPS L3 Power"
     register_type: holding
     address: 642
@@ -183,7 +183,7 @@ sensor:
     disabled_by_default: true
 
   - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
+    modbus_controller_id: deye_modbus_controller_normal
     name: "Load UPS Power"
     register_type: holding
     address: 643
