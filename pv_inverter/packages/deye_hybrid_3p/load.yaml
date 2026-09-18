@@ -1,4 +1,4 @@
-﻿# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
+# Copyright 2025 Lewa-Reka <lewareka.yt@gmail.com>
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -252,11 +252,3 @@ sensor:
       );
     icon: "mdi:home-lightning-bolt"
 
-binary_sensor:
-  - platform: modbus_controller
-    modbus_controller_id: ${modbus_controller_id}
-    name: "AC Load Relay Reserved"
-    register_type: holding
-    address: 552
-    bitmask: 0x2
-    icon: "mdi:toggle-switch-variant"
