@@ -13,7 +13,9 @@
 # limitations under the License.
 
 substitutions:
-  update_interval: 5s
+  update_interval: 3s
+  update_interval_normal: 15s
+  update_interval_slow: 300s
 
 esphome:
   name: "${name}"
@@ -63,12 +65,29 @@ uart:
 modbus:
   id: modbus_1
   uart_id: modbus_uart
+  turnaround_time: 100ms
 
 modbus_controller:
+  # FAST - sterowanie, bilans i stany przekaźników
   - id: ${modbus_controller_id}
     address: ${modbus_inverter_address}
     modbus_id: modbus_1
     setup_priority: -10
     update_interval: ${update_interval}
-    command_throttle: 60ms
+    offline_skip_updates: 3
+
+  # NORMAL - telemetria diagnostyczna
+  - id: deye_modbus_controller_normal
+    address: ${modbus_inverter_address}
+    modbus_id: modbus_1
+    setup_priority: -10
+    update_interval: ${update_interval_normal}
+    offline_skip_updates: 3
+
+  # SLOW - konfiguracja, liczniki i nastawy
+  - id: deye_modbus_controller_slow
+    address: ${modbus_inverter_address}
+    modbus_id: modbus_1
+    setup_priority: -10
+    update_interval: ${update_interval_slow}
     offline_skip_updates: 3
